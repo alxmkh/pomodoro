@@ -1,0 +1,34 @@
+#header {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 100px;
+    
+}
+
+
+.icons:hover {
+    color:red;
+}
+
+.icons:active {
+    color: gray;
+}
+
+.custom_inputs {
+    color: black;
+    font-size: 30px;
+    border:none;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.icons {
+    font-size: 60px;
+}
+
+.minHeader {
+    font-family: 'Orbitron', sans-serif;
+}
+
+input[type="text"]:disabled {
+    background: white;
+  }
