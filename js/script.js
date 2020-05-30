@@ -18,9 +18,9 @@ let sessionDiv = document.querySelector('#sessionDiv');
 let breakDiv = document.querySelector('#breakDiv');
 
 let myInterval = -1;
-//inputSession.value = 25;
-//let timeInSeconds = inputSession.value * 60;
-let timeInSeconds = 6;
+inputSession.value = 25;
+let timeInSeconds = inputSession.value * 60;
+//let timeInSeconds = 6;
 //let timer;
 let flagBreak = false;
 
@@ -74,6 +74,7 @@ startClock.addEventListener('click', function () {
     blockButton(downArrowBreak, 'none');
     blockButton(startClock, 'none');
     blockButton(pauseClock, 'auto');
+    blockButton(stopClock, 'auto');
     if (timeInSeconds == inputSession.value * 60) {
         getTimer(inputSession.value * 60, 'start');
     } else {
@@ -84,6 +85,7 @@ startClock.addEventListener('click', function () {
 pauseClock.addEventListener('click', function () {
     blockButton(startClock, 'auto');
     blockButton(pauseClock, 'none');
+    blockButton(stopClock, 'none');
     getTimer(0, 'pause');
 });
 
